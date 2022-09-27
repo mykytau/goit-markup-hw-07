@@ -1,0 +1,70 @@
+.button__wrapper .photo__portfolio {
+    padding: 0;
+    margin: 0;
+}
+.button__wrapper  {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    padding-left: 0;
+    margin-top: 0;
+    margin-right: 8px;
+    gap:8px;
+    &:nth-last-child(-n+1){
+        margin-right: 0;
+    }
+}
+
+
+
+.main__button {
+    background-color: var(--accent-color);
+    color: var(--header-bcolor);
+    font-size: 16px;
+    line-height: 1.62;
+    padding: 6px 22px;
+    border-radius: 4px;
+    font-weight: 500;
+    font-family: inherit;
+    letter-spacing: 0.03em;
+    cursor: pointer;
+    border: none;
+    text-align: center;
+/* shadow-middle */
+
+box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+.button__wrapper, .main__button:focus,
+.main__button{
+    color:var(--header-bcolor);
+}
+.button__wrapper .button__gray {
+    margin-right: 8px;
+}
+
+.button__gray {
+    background-color: var(--team-bcolor);
+    color: var(--h-color-text);
+    padding: 6px 22px;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 16px;
+    font-family: inherit;
+    letter-spacing: 0.03em;
+    cursor: pointer;
+    line-height: 1.62;
+    margin-right: 8px;
+    border: none;
+    transition: color 250ms var(--cubic-bezier), 
+    background-color 250ms var(--cubic-bezier), 
+    box-shadow 250ms var(--cubic-bezier);
+    &:hover,
+    &:focus{
+        background-color:var(--accent-color);
+    color:#FFFFFF;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+&:nth-last-child(-n+1){
+    margin-right: 0;
+}
+}

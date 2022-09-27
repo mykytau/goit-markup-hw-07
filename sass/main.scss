@@ -1,0 +1,44 @@
+// Base 
+@import "./utils/variables";
+@import "./base/base";
+@import "./base/reset";
+
+// Special Style
+@import "./base/container";
+@import "./utils/hidden";
+
+
+// Header
+
+@import "./components/logo";
+@import "./components/nav";
+@import "./components/header";
+
+// Hero
+@import "./layout/hero";
+@import "./components/btn";
+
+
+
+// What we do 
+@import "./layout/work";
+
+// Team
+@import "./layout/team";
+@import "./components/social";
+
+// Clients
+@import "./layout/clients";
+
+// Footer
+@import "./components/subs";
+@import "./components/footer";
+@import "./components/follow";
+
+// Modal Window
+@import "./components/modal";
+@import "./components/register-modal";
+
+// Portfolio
+@import "./layout/btnportfol";
+@import "./components/portolio"

@@ -1,0 +1,31 @@
+.follow{
+    margin-left: 70px;
+}
+    .follow__title {
+    color: var(--header-bcolor);
+    margin-bottom: 20px;
+}
+
+.follow__list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.follow__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    transition: background-color 250ms var(--cubic-bezier);
+}
+
+.follow__link:hover,
+.follow__link:focus{
+    background: var(--accent-color);
+   
+}

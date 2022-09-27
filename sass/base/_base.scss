@@ -1,0 +1,37 @@
+body{
+    background-color: var(--header-bcolor);
+    font-family: Roboto, sans-serif;
+    color: var(--h-color-text);
+    letter-spacing: 0.03em;
+    font-size: 14px;
+}
+
+.section{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.team__title {
+    color:#212121;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-align: center;
+}
+.well{
+    padding: 94px 0;
+}
+.programists__pictures{
+    padding-top: 94px;
+    padding-bottom: 94px;
+    background-color: var(--team-bcolor);
+}
+.title__footer{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}

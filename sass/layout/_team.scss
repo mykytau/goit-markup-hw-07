@@ -1,0 +1,58 @@
+.programists__pictures ul {
+    list-style-type:none;
+    padding: 0;
+}
+
+.programists__pictures{
+    padding-top: 94px;
+    padding-bottom: 94px;
+    background-color: var(--team-bcolor);
+}
+.team__title{
+    color:#212121;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 50px;
+    }
+    .team__text{
+        background: #FFFFFF;
+box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 0px 0px 4px 4px;
+}
+.team__decor{
+    padding-top: 30px;
+    padding-bottom: 16px;
+}
+.team__name{
+        color: var(--h-color-text);
+        font-weight: 500; 
+        font-size: 16px; 
+        line-height: 1.17;
+        text-align: center;
+        margin-bottom: 0;
+}  
+.team__add{
+    padding-bottom: 30px;
+}
+
+.job__title{
+    color: var(--main-text-color); 
+    font-size: 16px; 
+    line-height: 1.17;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+.our__team{
+    display: flex;
+    gap: 30px;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
