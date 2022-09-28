@@ -1,6 +1,5 @@
 .contacts-nav__link{
-      margin-right: 50px;
-      margin-left: 50px;
+     
     &:nth-last-child(-n + 1){
         margin-right: 0;
     }
@@ -17,6 +16,10 @@
         display: inline-block;
         display: flex; 
         align-items: center
+        
+    }
+    header{
+        border-bottom: 1px solid #ECECEC;
     }
     .contacts__address{
         margin-right: 50px;
@@ -25,7 +28,7 @@
     text-decoration: none;
     }
      .nav__mail{
-        margin-left: 50px;
+       
         color: var(--main-text-color);
         &:hover,
         &:focus{
@@ -35,14 +38,22 @@
 
    
       .nav__phone{
-        margin-left: 50px;
+       
         color: #757575;
         &:hover,
         &:focus {
             color:var(--accent-color)
         }
     }
-    
+    .header__li{
+        position:relative;
+        margin-right: 50px;
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+    .header__li:nth-last-child(-n + 1) {
+        margin-right: 0;
+    }
        .contacts__address:nth-last-child(-n + 1){
        margin-right: 0;
        }
@@ -73,3 +84,17 @@
             fill:var(--accent-color)
         }
        }
+   
+       .contacts-nav__link {
+        margin-top: 0;
+        margin-bottom: 0;
+        list-style-type: none;
+        padding: 0;
+    }
+    .contacts-nav__link{
+        display: flex;
+        margin-left: auto;
+    }
+    .contacts-nav__link .nav__mail + .nav__phone{
+        margin-left: 50px;
+    }

@@ -1,6 +1,7 @@
 .clients{
     padding: 94px 0;
    }
+
    .logo__link{
     display: flex;
     justify-content: center;
@@ -10,14 +11,14 @@
     border-radius: 4px;
     fill: var(--color-gray);
     border: 1px solid var(--color-gray);
-    transition: fill 250ms var(--cubic-bezier);
-    border: 250ms var(--cubic-bezier);
+    transition: fill 250ms var(--cubic-bezier), border 250ms var(--cubic-bezier);
     &:hover,
     &:focus{
         fill: var(--accent-color);
         border: 1px solid var(--accent-color)
     }
 }
+
    .clients__pick{
     color:#212121;
     font-weight: 700;
