@@ -31,7 +31,7 @@
 @import "./layout/clients";
 
 // Footer
-@import "./components/subs";
+
 @import "./components/footer";
 @import "./components/follow";
 
@@ -41,4 +41,9 @@
 
 // Portfolio
 @import "./layout/btnportfol";
-@import "./components/portolio"
+@import "./components/portolio";
+
+// DZ 8 
+@import "./base/section-h";
+@import "./layout/mobile";
+

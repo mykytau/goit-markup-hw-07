@@ -1,12 +1,24 @@
-.clients{
-    padding: 94px 0;
-   }
+// .clients{
+//     // padding: 94px 0;
+//    }
+.client__logo{
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: calc((100% - 30px) / 2);
 
-   .logo__link{
+@media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 60px) / 3);
+    }
+@media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 30px) / 6);
+    }
+}
+
+   .client__link{
     display: flex;
     justify-content: center;
     align-items: center; 
-    width: 170px;
+    padding: 20px 0;
     height: 92px;
     border-radius: 4px;
     fill: var(--color-gray);
@@ -19,22 +31,47 @@
     }
 }
 
-   .clients__pick{
-    color:#212121;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
-    text-align: center;
-    margin-bottom: 50px;
-}
+// //    .clients__pick{
+//     // color:#212121;
+//     // font-weight: 700;
+//     // font-size: 36px;
+//     // line-height: 1.17;
+//     // letter-spacing: 0.03em;
+//     // text-align: center;
+//     // margin-bottom: 50px;
+// }
 
-.our__clients{
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    list-style-type: none;
-    padding: 0;
-    margin: 0
-}
-
+.clients{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    
+        @media screen and (min-width: 768px) {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            }
+        @media screen and (min-width: 1200px) {
+            display: flex;
+            flex-wrap: nowrap;
+            gap: 30px;
+            }
+    
+        &__logo{
+            display: flex;
+            flex-wrap: wrap;
+            flex-basis: calc((100% - 30px) / 2);
+    
+        @media screen and (min-width: 768px) {
+            flex-basis: calc((100% - 60px) / 3);
+            }
+        @media screen and (min-width: 1200px) {
+            flex-basis: calc((100% - 30px) / 6);
+            }
+        }
+    
+        &__active{
+            fill: currentColor;
+        }
+    
+    }

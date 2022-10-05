@@ -1,43 +1,90 @@
-.pictures{
-    padding-bottom: 94px;
-}
-.work__list{
-    color:#212121;
-    font-family: 'Roboto';
-    font-size: 36px;
-    font-weight: 700;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
-    margin-bottom: 50px;
-    margin-top: 0;
-    text-align: center;
-}
-.work__description {
+
+.work{
     display: flex;
     gap: 30px;
-    margin: 0;
-    list-style-type: none;
-    padding-left: 0;
 }
+ .work__window{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 370px;
+        background-color:  rgba(47, 48, 58, 0.8);
+}
+.work__text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    height: 70px;
+    bottom: 0;
+    left: 0;
+    width: 370px;
+    background-color: rgba(47, 48, 58, 0.8);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    }
+
+
+
 .section__work{
     position: relative;
 }
-.title__window{
-    
-    font-weight: 700;
-    line-height: 1.17;
-    text-transform: uppercase;
-    color: var(--header-bcolor);
-    padding: 27px 0;
-    position: absolute;
-  height: 70px;
- 
-    bottom: 0;
-    width: 370px;
-    background-color: rgba(47, 48, 58, 0.8);
+
+
+.company__plus{
+
+    @media screen and (min-width: 768px) {
+       display: flex;
+       flex-wrap: wrap;
+       gap: 30px;
+   }
+
+   @media screen and (min-width: 1200px) {
+       display: flex;
+       flex-wrap: nowrap;
+       gap: 30px;
+   }
 }
-.title__window{
-    display: flex;
-    align-items:center;
-  justify-content: center;
-}
+.benefits__text{
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        color: #757575;
+    }
+    .list__size{
+            &:not(:last-child){
+                margin-bottom: 30px;
+            }
+            @media screen and (min-width: 768px) {  
+            }
+        }
+        @media screen and (min-width: 768px) {
+            .list__size{
+                flex-basis: calc((100% - 30px) / 2);
+            }
+            .list__size:not(:last-child) {
+                margin-bottom: 0;
+            }
+        }
+        @media screen and (min-width: 1200px) {
+            .list__size:not(:last-child){
+                margin-bottom: 0;
+            }
+        }
+        .list__prefences{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 30px;
+                min-height: 120px;
+                background: #F5F4FA;
+                border-radius: 4px;
+            }
+            .section-title__decor{
+                display: none;
+                @media screen and (min-width: 1200px) {
+                    display: block;
+                }
+            }
