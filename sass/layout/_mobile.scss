@@ -14,25 +14,18 @@
     }
 }
 
-.mobile-menu__flex{
+.mobile_flex{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 100vh;
 }
 
-.is-open {
-     display: block;
-}
 
-// Navigation mobile 
 
 .nav-mobile__item{
     margin-bottom: 30px;
 
-    &:last-child{
-        margin-bottom: 0;
-    }
 }
 
 .nav-mobile__link{
@@ -130,7 +123,7 @@
     }
 }
 
-// btn close
+// zakryt'
 
 .mobile-btn{
     position: absolute;
@@ -152,13 +145,16 @@
     border: none;
     outline: none;
 
-    color: var(--heading-color);
+    color: #212121;
 
     &:hover {
-        color: var(--premary-color);
+        color: var(--accent-color);
     }
 }
 
 .mobile-btn__icon{
     fill: currentColor;
+}
+.is-open {
+    display: block;
 }

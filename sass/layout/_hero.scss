@@ -88,9 +88,16 @@
     justify-content: center;
     margin-bottom: 30px;
     min-height: 120px;
+    width: 270px;
     border-radius: 4px;
     background-color: var(--team-bcolor);
+
+    @media screen and (max-width: 480px){
+        width: 100%;
+    }
+       
 }
+
 .benefits {
  color:var(--h-color-text);
     margin: 0;

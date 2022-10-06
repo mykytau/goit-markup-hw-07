@@ -1,4 +1,4 @@
-
+       
     .header {
         
     
@@ -46,8 +46,11 @@
         &:focus {
             color: var(--accent-color);
         }
-    
     }
+    .site__nav{
+        display: flex;
+    }
+    
 .link-studio__active{
         color: var(--accent-color);
         &::after {

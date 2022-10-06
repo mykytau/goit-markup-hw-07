@@ -85,7 +85,7 @@ img {
 }
 
 .container {
-  width: 480px;
+  max-width: 480px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -321,6 +321,12 @@ header {
   color: var(--accent-color);
 }
 
+.site__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .link-studio__active {
   color: var(--accent-color);
 }
@@ -536,8 +542,14 @@ header {
           justify-content: center;
   margin-bottom: 30px;
   min-height: 120px;
+  width: 270px;
   border-radius: 4px;
   background-color: var(--team-bcolor);
+}
+@media screen and (max-width: 480px) {
+  .list__preferences {
+    width: 100%;
+  }
 }
 
 .benefits {
@@ -639,24 +651,25 @@ header {
   position: relative;
 }
 
+.company__plus {
+  display: grid;
+}
 @media screen and (min-width: 768px) {
   .company__plus {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: grid;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     gap: 30px;
+    grid-template-columns: repeat(2, auto);
   }
 }
 @media screen and (min-width: 1200px) {
   .company__plus {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: grid;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
     gap: 30px;
+    grid-template-columns: repeat(4, auto);
   }
 }
 
@@ -799,6 +812,12 @@ header {
   font-size: 16px;
   line-height: 19px;
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-bottom: 16px;
 }
 @media screen and (min-width: 768px) {
@@ -843,7 +862,7 @@ header {
 .social__list:last-child {
   margin-bottom: 0;
 }
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
   .social__list {
     -ms-flex-preferred-size: calc((100% - 30px) / 2);
         flex-basis: calc((100% - 30px) / 2);
@@ -1829,7 +1848,7 @@ header {
   }
 }
 
-.mobile-menu__flex {
+.mobile_flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1843,15 +1862,8 @@ header {
   height: 100vh;
 }
 
-.is-open {
-  display: block;
-}
-
 .nav-mobile__item {
   margin-bottom: 30px;
-}
-.nav-mobile__item:last-child {
-  margin-bottom: 0;
 }
 
 .nav-mobile__link {
@@ -1964,12 +1976,16 @@ header {
   background-color: transparent;
   border: none;
   outline: none;
-  color: var(--heading-color);
+  color: #212121;
 }
 .mobile-btn:hover {
-  color: var(--premary-color);
+  color: var(--accent-color);
 }
 
 .mobile-btn__icon {
   fill: currentColor;
+}
+
+.is-open {
+  display: block;
 }/*# sourceMappingURL=main.css.map */

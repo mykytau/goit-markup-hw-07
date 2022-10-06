@@ -35,19 +35,23 @@
 
 
 .company__plus{
-
+display: grid;
     @media screen and (min-width: 768px) {
-       display: flex;
+       display: grid;
        flex-wrap: wrap;
        gap: 30px;
+       grid-template-columns: repeat(2, auto) ;
    }
-
+      
    @media screen and (min-width: 1200px) {
-       display: flex;
+       display: grid;
        flex-wrap: nowrap;
        gap: 30px;
+       grid-template-columns: repeat(4, auto);
    }
-}
+   
+   }
+
 .benefits__text{
         line-height: 1.71;
         letter-spacing: 0.03em;
